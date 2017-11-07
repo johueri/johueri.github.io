@@ -21,16 +21,18 @@ footer {
 
 .container {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 }
 /*https://www.youtube.com/watch?v=RkrTGQsv14k	*/
 img {
-	max-width: 100%
+	width: 100%
 }
 
 nav ul {
 	display: flex;
 	justify-content: space-around;
+	margin-top: 2px;
+	padding-top: 2px;
 	align-items:center;
 	text-decoration: none;
 
@@ -54,8 +56,74 @@ h1, h2, h3 {
 	color:white;
 }
 
-#my-work {
-	grid-column:  1 / -1;
-	display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
+
+.my-projects {
 	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto 1fr 1fr auto;
+	grid-gap: 15px;
+	margin: 2rem 2rem;
+	grid-template-areas: 
+	"portfolio-header portfolio-header portfolio-header"
+	"ft-header vp-header review-header"
+	"ft-image vpets reviews-project"
+	"ft-description vp-description r-description"
+}
+	
+.portfolio-header {
+	grid-area: portfolio-header;
+	max-height: 4rem
+}
+.ft-header {
+	grid-area: ft-header;
+}
+.ft-image {
+	grid-area :ft-image;
+}
+.ft-description {
+	grid-area: ft-description;
+}
+
+.vp-header {
+	grid-area: vp-header;
+}
+.vpets {
+	grid-area: vpets ;
+}
+.vp-description {
+	grid-area: vp-description;
+}
+.review-header {
+	grid-area: review-header;
+}
+.reviews-project {
+	grid-area: reviews-project;
+}
+.r-description {
+	grid-area: r-description;
+}
+.skill-container ul {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	text-decoration: none;
+	margin: 3rem;
+}
+.about-container {
+	display:grid;
+	grid-template-columns: 1fr;
+	margin: 2rem;
+	grid-gap: 15px
+
+}
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.github {
+	background-color: white;
+
+}
