@@ -1,0 +1,61 @@
+/*to create your background image you have to type "../ " before the location of image in order to navigate back to their shared directory*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+footer,
+header {
+	grid-column: 1 / -1;
+	padding: 2rem
+}
+
+footer {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: black;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+/*https://www.youtube.com/watch?v=RkrTGQsv14k	*/
+img {
+	max-width: 100%
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	text-decoration: none;
+
+}
+	nav ul li {
+		margin-right: 5px;
+		text-decoration: none;
+		color:white;
+	}
+
+ol, ul {
+	list-style-type: none;
+}
+h1 {
+	padding-top: 2rem;
+	padding-bottom: 0rem;
+
+}
+h1, h2, h3 {
+	text-align: center;
+	color:white;
+}
+
+#my-work {
+	grid-column:  1 / -1;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	
